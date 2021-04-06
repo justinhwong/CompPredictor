@@ -50,10 +50,10 @@ function jsonReader(filePath, callback) {
           end = (end/10).toFixed((2));
           spicy = (spicy/10).toFixed((2));
 
-          let comp = (1 - (((100 * Math.abs(((int - tIntAvg) / ((parseFloat(int) + parseFloat(tIntAvg)) / 2))
-              + 100 * Math.abs((str - tStrAvg) / ((parseFloat(str) + parseFloat(tStrAvg)) / 2))
-              + 100 * Math.abs((end - tEndAvg) / ((parseFloat(end) + parseFloat(tEndAvg)) / 2))
-              + 100 * Math.abs((spicy - tSpicyAvg) / ((parseFloat(spicy) + parseFloat(tSpicyAvg)) / 2))
+          let comp = (1 - (((110 * Math.abs(((int - tIntAvg) / ((parseFloat(int) + parseFloat(tIntAvg)) / 2))
+              + 110 * Math.abs((str - tStrAvg) / ((parseFloat(str) + parseFloat(tStrAvg)) / 2))
+              + 110 * Math.abs((end - tEndAvg) / ((parseFloat(end) + parseFloat(tEndAvg)) / 2))
+              + 70 * Math.abs((spicy - tSpicyAvg) / ((parseFloat(spicy) + parseFloat(tSpicyAvg)) / 2))
           )) / 4) / 10000)).toFixed((2));
           console.log(applicants.name + "'s score: \n" + comp);
 
